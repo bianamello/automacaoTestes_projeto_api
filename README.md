@@ -1,6 +1,4 @@
-## Projeto exemplo de API
-
-O objetivo do projeto é automatizar API REST.
+## Projeto de automação de APIs REST
 
 **O projeto possui as seguintes Gems:**
 
@@ -13,13 +11,12 @@ O objetivo do projeto é automatizar API REST.
 ### Pré requisitos:
 
 - Gerenciador de versões do Ruby;
-- Ruby;
+- Ruby >= 2.6.1;
 - Bundler.
 
 **Dicas:**
 
-- [Rbenv] - O Rbenv fornece suporte para trabalhar com versões do Ruby
-	Comandos para instalação:
+- [Rbenv] - O Rbenv fornece suporte para trabalhar com versões do Ruby. Comandos para instalação:
 	- git clone https://github.com/rbenv/rbenv.git ~/.rbenv
 	- echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
 	- echo 'eval "$(rbenv init -)"' >> ~/.bashrc
