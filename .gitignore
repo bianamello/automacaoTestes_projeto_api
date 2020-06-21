@@ -1,0 +1,3 @@
+reports/*.html
+reports/*.json
+Gemfile.lock
