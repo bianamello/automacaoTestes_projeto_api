@@ -26,16 +26,17 @@ end
 
 # -------------------------------Exclusão-------------------------------
 
-Dado("que eu tenha empregados cadastrados") do |table|
-    @empregados = table.rows_hash
+Dado("que eu tenha empregados cadastrados") do
+    @empregados = {"name"=>Faker::Name.first_name, "salary"=>"3000", "age"=>"30"}
     endpoint = "#{CONFIG['apis']['base_url']}/create"
-    @result = post_empregados(endpoint, @empregados)
-    expect(@result.response.code).to eql "200"
+    @empregado_criado = post_empregados(endpoint, @empregados)
+    expect(@empregado_criado.response.code).to eql "200"
+    puts "Empregado criado: #{@empregado_criado}"
 end
   
 Quando("eu faço uma requisição para o serviço de exclusão de empregados") do
-    endpoint = "#{CONFIG['apis']['base_url']}/delete/#{@result['data']['id']}"
+    endpoint = "#{CONFIG['apis']['base_url']}/delete/#{@empregado_criado['data']['id']}"
     @result = HTTParty.delete(endpoint, headers: {'Content-Type' => 'application/json'})
-    puts "\n #{endpoint}"
-    puts "\n #{@result}"
+    puts "Requisição para excluir: #{endpoint}"
+    puts "Resposta da API: #{@result}"
 end

@@ -8,10 +8,9 @@
 - Rspec (framework BDD para ruby)
 
 **O projeto possui as seguintes funcionalidades:**
-- [x] Cenários outline:
-	- Cenário de testes para criar empregados;
-	- Cenário de testes para excluir empregados;
-	- Verificação das mensagens de resposta e status code.
+- [x] Cenários outline de testes para criar empregados;
+- [x] Cenário de testes para excluir empregados;
+- [x] Verificação das mensagens de resposta e status code.
 - [x] Possui relatório em formato html, com evidência dos testes (imagens) - Pasta reports
 - [x] Configurado para rodar no Jenkins
 
