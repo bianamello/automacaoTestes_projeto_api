@@ -8,11 +8,12 @@
 - Rspec (framework BDD para ruby)
 
 **O projeto possui as seguintes funcionalidades:**
-- [x] Cenários outline de testes para criar empregados;
+- [x] Cenário outline de testes para criar empregados;
 - [x] Cenário de testes para excluir empregados;
 - [x] Verificação das mensagens de resposta e status code.
 - [x] Possui relatório em formato html, com evidência dos testes (imagens) - Pasta reports
 - [x] Configurado para rodar no Jenkins
+- [x] Configurado para gerar relatório no Jenkins
 
 
 ### Pré requisitos:
@@ -59,7 +60,8 @@
 ### Para rodar os testes no Jenkins:
 
 - Criar um novo Job no Jenkins do tipo Pipeline;
-- Nas configurações selecionar "Pipeline script from SCM" e colocar a URL do projeto de testes: https://github.com/bianamello/projeto_api.git
+- Nas configurações de "Pipeline Definition" selecionar "Pipeline script from SCM" e "SCM" selecionar o "Git";
+- Colocar a URL do projeto de testes no "Repository URL": https://github.com/bianamello/projeto_api.git
 
 **Inserindo plugin Cucumber reports no Jenkins (O projeto está configurado no Jenkinsfile para gerar o relatório no Jenkins):**
 - Clicar em Gerenciar Jenkins/ Gerenciar plugins
