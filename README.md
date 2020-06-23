@@ -60,7 +60,7 @@
 ### Para rodar os testes no Jenkins:
 
 - Criar um novo Job no Jenkins do tipo Pipeline;
-- Nas configurações selecionar "Pipeline script from SCM" e colocar a URL do projeto de testes: https://github.com/bianamello/projeto_web.git
+- Nas configurações selecionar "Pipeline script from SCM" e colocar a URL do projeto de testes: https://github.com/bianamello/projeto_api.git
 
 **Inserindo plugin Cucumber reports no Jenkins (O projeto está configurado no Jenkinsfile para gerar o relatório no Jenkins):**
 - Clicar em Gerenciar Jenkins/ Gerenciar plugins
